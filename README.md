@@ -35,7 +35,7 @@ Persistent state is maintained using `SqliteSaver` via the LangGraph checkpointe
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/sql-agent.git
+   git clone 
    cd sql-agent
    ```
 
