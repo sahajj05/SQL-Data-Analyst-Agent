@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL Data Analyst Agent</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <button class="mobile-toggle" onclick="toggleSidebar()">☰ Schema</button>
+    <div class="app-container">
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">Database Explorer</div>
+            <div class="sidebar-content" id="db-schema-tree">
+                <div style="text-align:center; padding:20px; color:#888;">Loading Schema...</div>
+            </div>
+        </aside>
+        <main class="chat-container">
+            <div class="chat-header">
+                SQL Data Analyst Agent
+            </div>
+            <div class="chat-messages" id="chat-messages">
+                <div class="message system-msg">Agent initialized. Ready for queries!</div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="query-input" placeholder="e.g., Who are the top 3 artists?" autocomplete="off" onkeypress="handleKeyPress(event)">
+                <button onclick="sendQuery()" id="send-btn">Send</button>
+            </div>
+        </main>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
